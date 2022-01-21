@@ -1,2 +1,2 @@
-# Restaurant-website
-A restaurant website that I made for my 1st semester's project.
+# important:
+Extract the images.rar and fonts.rar in the same folder.
