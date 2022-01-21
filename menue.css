@@ -1,0 +1,308 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+/* HEADER  */
+
+/* Normal header when at top */
+
+.normalheader{
+    padding: 20px;
+    background:rgba(255,255,255,0);
+	position:fixed;
+	width: 100%;
+	transition: "background 0.5s ease";
+}
+
+/* sticky header on scroll  */
+.stickyheader{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 20px;
+z-index: 2;
+background: rgba(255,255,255,0.7);
+width: 100%;
+
+/* transition: "transform 0.4s"; */
+}
+
+
+.stickyheader img{
+	content: url(images/icons/logo2.png);
+}
+
+
+/* header list item (about, home...)  */
+.nav-list-item{
+	list-style: none;
+    padding-top: 12px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.menu{
+	width: 80%;
+}
+
+/* list item anchor tag */
+.nav-list-item a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight:lighter;
+	font-family: Montserrat;
+}
+
+
+/* list item anchor tag hover (about home,etc) */
+.nav-list-item a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header on scroll list items anchor tag  (about,home...)  */
+
+.stickyheadernav-list-item a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight:lighter;
+}
+
+/* normal header social icons facebook etc  */
+
+.headersocialicon{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 18px;
+}
+
+/* header social icon anchor tag  */
+.headersocialicon a{
+	color: white;
+
+}
+.headersocialicon a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header social icons facebok etc */
+.stickyheadersocialicon a{
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#top{
+    width: 100%;
+    height: 50%;
+
+    
+    background-image: url("menue.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heading-on-pic{
+
+    
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    font-size: 40px;
+    color: white;
+}
+#content{
+    width:100%;
+    height:70%;
+
+}
+.heading{
+    font-size: 40px !important;
+    font-family:cursive !important;
+    padding-top: 30%;
+    
+    
+}
+.heading1{
+    padding-left: 90%;
+}
+
+.heading2{
+    padding-left: 240%;
+}
+.dataleft{
+    position:absolute;
+    padding-top: 0.5%;
+    left: 16.5%;
+    font-family: cursive;
+    font-size: 25px;
+}
+    
+.dataright{
+    
+    position:absolute;
+    padding-top: 0.5%;
+    left: 54.7%;
+    font-family: cursive;
+    font-size: 25px;
+}
+.sub-data-left{
+    
+    position:absolute;
+    left: 16.5%;
+    font-size: 22px;
+
+}
+.sub-data-right{
+    
+    position:absolute;
+    left: 54.8%;
+    font-size: 22px;
+
+}    
+
+#lunch{
+    margin-top: 37%;
+    padding-top: 0%;
+
+    width: 100%;
+    height: 40%;
+    background-image: url("menue.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+
+
+ 
+}
+
+
+#temp{
+    height: 60%;
+    width: 100%;
+    
+}
+#heading-on-pic2{
+
+    
+    position: absolute;
+    top: 200%;
+    left: 45%;
+    font-size: 60px;
+    color: white;
+}
+
+#pics{
+    width: 8%;
+    height: 12%;
+    
+    position: absolute;
+    margin: 8%;
+    margin-left: 20%;
+
+
+
+
+}
+
+#pics1{
+    width: 8%;
+    height: 12%;
+    
+    position: absolute;
+    margin: 8%;
+    
+    margin-left: 20%;
+
+
+
+
+}
+.roundborder{
+    border-radius: 10px;
+}
+
+.pics-heading{
+    position: absolute;
+    left: 115%;
+    
+    font-family:cursive !important;
+}
+.pics-data{
+    position: absolute;
+    
+    
+    font-size: 23px;
+
+
+}
+
+#pics-right{
+    width: 8%;
+    height: 12%;
+    
+    position: absolute;
+    margin: 8%;
+    margin-left: 56%;
+    
+
+}
+
+
+
+/* footer in the end*/
+.footer {
+	width: 100%;
+	height: 100%;
+	background-color: #222222;;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.footer h1{
+    margin-top: 30px;
+	font-size: 40px;
+  }
+
+.footer p{
+	color:#999999;
+    padding: 10px;
+    font-size: 22px;
+}
+.footer a{
+	text-decoration: none;
+	color:#999999;
+
+}
+.footer a:hover{
+	color:#d61c22
+}
+.footer img{
+	border-radius: 20px;
+}

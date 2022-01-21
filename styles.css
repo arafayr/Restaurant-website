@@ -1,0 +1,477 @@
+/* HEADER  */
+
+/* Normal header when at top */
+
+.normalheader{
+    padding: 20px;
+    background:rgba(255,255,255,0);
+	position:fixed;
+	width: 100%;
+	transition: "background 0.5s ease";
+}
+
+/* sticky header on scroll  */
+.stickyheader{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 20px;
+z-index: 2;
+background: rgba(255,255,255,0.7);
+width: 100%;
+}
+
+
+.stickyheader img{
+	content: url(images/icons/logo2.png);
+}
+
+
+/* header list item (about, home...)  */
+.nav-list-item{
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.menu{
+	width: 80%;
+}
+
+/* list item anchor tag */
+.nav-list-item a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight:lighter;
+	font-family: Montserrat;
+}
+
+
+/* list item anchor tag hover (about home,etc) */
+.nav-list-item a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header on scroll list items anchor tag  (about,home...)  */
+
+.stickyheadernav-list-item a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight:lighter;
+}
+
+/* normal header social icons facebook etc  */
+
+.headersocialicon{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 18px;
+}
+
+/* header social icon anchor tag  */
+.headersocialicon a{
+	color: white;
+
+}
+.headersocialicon a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header social icons facebok etc */
+.stickyheadersocialicon a{
+	color:black;
+}
+
+
+
+/* main page main slide top with animation */
+#slideimage{
+	height: 100%;
+	background-image: url(images/photo-gallery-09.jpg);
+	animation-name: slidechange;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-delay: 4;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slidechange{
+	0% {background-image: url(images/master-slides-02.jpg)}
+	50% {background-image: url(images/master-slides-01.jpg)}
+	100% {background-image: url(images/photo-gallery-09.jpg)}
+}
+
+
+/* Home page main heading on image  */
+.mainheadingonImage{
+	justify-content: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+/* Home page sub heading on image  */
+.mainheadingonImage span{
+	font-family: Courgette;
+	font-size: 60px;
+    line-height: 0;
+	color: white;
+	animation-name: mainheadingtransform;
+	animation-duration: 4s;
+}
+.mainheadingonImage h2{
+	font-size: 100px;
+	line-height: 0.5;
+	color: white;
+	animation-name: mainheadingtransform;
+	animation-duration: 4s;
+}
+
+/* Home page button like anchor tag on image  */
+.mainheadingonImage a{
+	background-color: white;
+	text-decoration: none;
+	padding: 15px 30px 15px 30px;
+	color: red;
+	border-radius: 15px;
+	animation-name: mainheadingtransform;
+	animation-duration: 4s;
+}
+/* Home page button like anchor tag on image hover  */
+.mainheadingonImage a:hover{
+	background-color: #ec1d25;
+	color: white;
+}
+
+
+
+
+/* headings on main image animate  */
+
+/* The animation code */
+@keyframes mainheadingtransform {
+	/* 0%   {transform:rotateY(180deg);}
+	100% {transform:rotateY(0deg);;}
+	 */
+	 0%   {opacity: 0;}
+	 25%  {opacity: 0;}
+	 50% {opacity: 0.5;}
+	 100% {opacity: 1;}
+	 
+	}
+  
+
+/* FIRST SECTION */
+
+#section1{
+	width: 100%;
+	height: 100%;
+}
+#firstsectionheadingcontainer{
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#firstsectionheading{
+	font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+	color: #d61c22;
+}
+
+#firstsectionheadingcontainer p{
+	font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+	margin-bottom: 10px;
+}
+#firstsectionheadingcontainer h3{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#firstsectionimagecontainer{
+	margin-top: 80px;
+	margin-bottom: 50px;
+	margin-left: 0px;
+	margin-right: 50px;
+	width: 500px;
+	height: 400px;
+	background-color: royalblue;
+	border-radius:10px;
+	overflow: hidden;
+}
+
+#firstsectionimagecontainer img:hover{
+	width: 530px;
+	height: 430px;
+}
+
+#firstsectionimagecontainer img{
+	width: 500px;
+	height: 400px;
+	border-radius:10px;
+	transition: all 1s ease;
+
+}
+#firstsectionbackground{
+	display: flex;
+	flex-direction: row;
+	background-image: url(../images/icons/pattern1.png);
+	width: 100%;
+	height: 100%;
+
+}
+
+
+/* seecond section  */
+
+#section2{
+	width: 100%;
+	height: 500px;
+}
+#section2img{
+	height: 500px;
+	/* text align ke liye veritcal and horizontal */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2img span{
+	font-family: Courgette;
+    font-size: 30px;
+    line-height: 0;
+	color: #d61c22;
+	padding-right: 10px;
+}
+#section2img h3{
+	font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px
+}
+
+
+/* section 3 */
+#section3mainheading{
+	margin-top: -28px;
+	text-align: center;
+}
+#section3mainheading h1{
+	padding-top:10px;
+	font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+	color: #d61c22;
+	padding-right: 15px;
+}
+#section3mainheading h2{
+	font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 8px
+}
+
+#section3subcontainerrow{
+	display: flex;
+	margin: 40px;
+}
+
+.section3imagecontainerrow{
+	width: 350px;
+	height: 450px;
+	margin: 30px;
+	overflow: hidden;
+	border-radius:10px;
+	position: relative;
+
+
+}
+.section3imagecontainerrow a{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 16px;
+			padding: 12px 24px;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			background-color: white;
+			border-radius: 10px;
+			opacity: 0.9;
+			font-family: Poppins;
+			font-weight: 500;
+			font-size: 22px;
+			color: #333333;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			text-decoration: none;
+}
+
+.section3imagecontainerrow a:hover{
+	background-color: #ec1d25;
+    color: white
+}
+
+#section3imagecontainercolumn{
+	width: 500px;
+	height: 488px;
+	display: flex;
+	flex-direction: column;
+	margin-top:10px;
+
+}
+
+
+.section3imagecontainerrow img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease;
+}
+
+.section3imagecontainerrow img:hover{
+	width: 110%;
+	height: 110%;
+}
+
+
+.section3imagesubcontainercolumn{
+	height: 100%;
+	width: 60%;
+	margin: 20px;
+	overflow: hidden;
+	border-radius:10px;
+	position: relative;
+
+}
+
+.section3imagesubcontainercolumn a{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 16px;
+			padding: 12px 24px;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;	
+			background-color: white;
+			border-radius: 10px;
+			opacity: 0.9;
+			font-family: Poppins;
+			font-weight: 500;
+			font-size: 22px;
+			color: #333333;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			text-decoration: none;
+}
+
+.section3imagesubcontainercolumn a:hover{
+	background-color: #ec1d25;
+    color: white
+}
+
+.section3imagesubcontainercolumn img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease;
+}
+
+.section3imagesubcontainercolumn img:hover{
+	width: 110%;
+	height: 110%;
+}
+
+
+/* SECTION 4 */
+#section4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background-image: url(images/icons/pattern1.png);
+	margin-top: -40px;
+}
+/* section 4 button */
+#section4 button{
+	margin-left: 50px;width: 160px;height: 40px;
+	background: #111111;
+	border-radius: 10px;
+	color:white;
+	outline: none;
+	border: none;
+}
+/* section 4 button hover */
+#section4 button:hover{
+	background-color: #ec1d25;
+}
+
+
+/* footer in the end*/
+.footer {
+	width: 100%;
+	height: 100%;
+	background-color: #222222;;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.footer h1{
+	font-size: 25px;
+  }
+
+.footer p{
+	color:#999999;
+}
+.footer a{
+	text-decoration: none;
+	color:#999999;
+
+}
+.footer a:hover{
+	color:#d61c22
+}
+.footer img{
+	border-radius: 20px;
+}

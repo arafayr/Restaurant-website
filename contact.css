@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER  */
+
+/* Normal header when at top */
+
+.normalheader{
+    padding: 20px;
+    background:rgba(255,255,255,0);
+	position:fixed;
+	width: 100%;
+	transition: "background 0.5s ease";
+}
+
+/* sticky header on scroll  */
+.stickyheader{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 20px;
+z-index: 2;
+background: rgba(255,255,255,0.7);
+width: 100%;
+}
+
+
+.stickyheader img{
+	content: url(images/icons/logo2.png);
+}
+
+
+/* header list item (about, home...)  */
+.nav-list-item{
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.menu{
+	width: 80%;
+}
+
+/* list item anchor tag */
+.nav-list-item a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight:lighter;
+	font-family: Montserrat;
+}
+
+
+/* list item anchor tag hover (about home,etc) */
+.nav-list-item a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header on scroll list items anchor tag  (about,home...)  */
+
+.stickyheadernav-list-item a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight:lighter;
+}
+
+/* normal header social icons facebook etc  */
+
+.headersocialicon{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 18px;
+}
+
+/* header social icon anchor tag  */
+.headersocialicon a{
+	color: white;
+
+}
+.headersocialicon a:hover{
+	color:#ec1d25;
+}
+
+
+/* sticky header social icons facebok etc */
+.stickyheadersocialicon a{
+	color:black;
+}
+
+
+
+
+/* Contactpage main top image */
+#contactimage{
+	height: 100%;
+	background-image: url(images/master-slides-06.jpg);
+}
+
+
+
+/* Contact page main heading on image  */
+.contactheading{
+	justify-content: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}  
+
+.contactheading h2{
+	font-size: 80px;
+	color: white;
+}
+
+
+
+
+/* Contact Form  */
+
+#form{
+    background-image: url(images/icons/pattern2.png);
+    /* margin-top: 20px; */
+}
+
+/* Form label and input container*/
+
+.labelandinputleveling{
+    display: flex;
+    flex-direction: column;
+}
+.labelandinputleveling input{
+    color: #111111;
+    font-size: 12px;
+}
+
+.forminput {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    outline: none;
+}
+
+#textareaandsubmitbtnstyle{
+    display: flex; 
+    justify-content:center;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Text area and submit button */
+
+#textareaandsubmitbtnstyle textarea{
+    padding: 5px;
+    color: #111111;
+    font-size: 18px;
+
+}
+#textareaandsubmitbtnstyle button{
+    background-color: #111111;
+    margin:40px;
+    padding: 12px;
+    width: 120px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+}
+/* form button hover */
+#textareaandsubmitbtnstyle button:hover{
+    background-color: #ec1d25;
+}
+
+
+
+
+
+/* footer in the end*/
+.footer {
+	width: 100%;
+	height: 100%;
+	background-color: #222222;;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.footer h1{
+	font-size: 25px;
+  }
+
+.footer p{
+	color:#999999;
+}
+.footer a{
+	text-decoration: none;
+	color:#999999;
+
+}
+.footer a:hover{
+	color:#d61c22
+}
+.footer img{
+	border-radius: 20px;
+}
